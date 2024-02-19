@@ -1,0 +1,9 @@
+<!-- products.component.html -->
+<div *ngFor="let product of products">
+  <h3>{{ product.title }}</h3>
+  <p>Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</p>
+  <!-- Add other product details as needed -->
+  <button (click)="addToCart(product)">Add to Cart</button>
+</div>
+
+
